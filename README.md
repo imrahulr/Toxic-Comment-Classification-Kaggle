@@ -1,1 +1,3 @@
-# Toxic-Comment-Kaggle
+# Toxic Comment Classification on Kaggle
+
+'''Text Classification
