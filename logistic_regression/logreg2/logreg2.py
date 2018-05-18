@@ -1,7 +1,3 @@
-# Modifying Tilii's original scrips https://www.kaggle.com/tilii7/tuned-logreg-oof-files
-# With https://www.kaggle.com/tunguz/cnn-glove300-3-oof-4-epochs
-# The output oof and prediction files could potentially be used for ensembling
-
 import numpy as np
 import pandas as pd
 import re
