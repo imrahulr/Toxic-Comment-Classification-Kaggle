@@ -109,27 +109,38 @@ def cleanData(text, stemming=False, lemmatize=False):
 
 #### Number of Occurrences of each Output Class
 
+<p align="center">
 <img src="/img/noofoccurrences.png" alt="Number of Occurrences of each Class"/>
+</p>
 
 #### Correlation between Output Classes
 
-![alt text](https://github.com/imrahulr/Toxic-Comment-Classification-Kaggle/blob/master/img/corr.png "Correlation between Output Classes")
+<p align="center">
+<img src="/img/corr.png" alt="Correlation between Output Classes"/>                                                                                                                                  </p>
 
 #### Words frequently occurring in Toxic Comments
 
-![alt text](https://github.com/imrahulr/Toxic-Comment-Classification-Kaggle/blob/master/img/wordtoxic.png "Words frequently occurring in Toxic Comments")
-
+<p align="center">
+<img src="/img/wordtoxic.png" alt="Words frequently occurring in Toxic Comments"/>
+</p>
+                                                                                                                                                      
 #### Words frequently occurring in Severe Toxic Comments
 
-![alt text](https://github.com/imrahulr/Toxic-Comment-Classification-Kaggle/blob/master/img/wordstox.png "Words frequently occurring in Severe Toxic Comments")
+<p align="center">
+<img src="/img/wordstox.png" alt="Words frequently occurring in Severe Toxic Comments"/>
+</p>
 
 #### Words frequently occurring in Threat Comments
 
-![alt text](https://github.com/imrahulr/Toxic-Comment-Classification-Kaggle/blob/master/img/woedthreat.png "Words frequently occurring in Threat Comments")
+<p align="center">
+<img src="/img/woedthreat.png" alt="Words frequently occurring in Threat Comments"/>
+</p>
 
 #### Words frequently occurring in Insult Comments
 
-![alt text](https://github.com/imrahulr/Toxic-Comment-Classification-Kaggle/blob/master/img/wordinsult.png "Words frequently occurring in Insult Comments")
+<p align="center">
+<img src="/img/wordinsult.png" alt="Words frequently occurring in Insult Comments"/>
+</p>
 
 ---
 
