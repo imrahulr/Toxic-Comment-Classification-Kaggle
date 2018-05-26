@@ -153,6 +153,7 @@ The final solution consists of ensemble of several machine learning models -
 <li>Attention with Bidirectional LSTM</li>
 <li>Bidirectional LSTM with Pre-Post Input Text</li>
 <li>Bidirectional GRU with derived features</li>
+<li>Capsule Network</li>    
 <li>CNN based on DeepMoji Architecture</li>
 <li>CNN + GRU</li>
 <li>DeepMoji Architecture</li>
@@ -182,7 +183,7 @@ Various pre-trained embeddings were used to create diverse models -
 <li>The overall model got a ROC AUC score of 0.9874 on private LB.</li>
 <li>Preprocessing was not much impactful and did not significantly improve the score of any model.</li>
 <li>RNN models were significantly better than CNN models.</li>
-<li>The best model was DeepMoji followed by CNN-GRU.</li>
+<li>The best model was DeepMoji followed by CNN-GRU and capsule network.</li>
 <li>Adding attention layer to RNN models boosted their score.</li>
 <li>Logistic regression and LightGBM models had much lower scores but provided diversity.</li>
 </ul>
@@ -193,14 +194,14 @@ Various pre-trained embeddings were used to create diverse models -
 
 ## Important Links
 
-<a href="https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge">Toxic Comment Classification Challenge - Kaggle</a>
-<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjWg-LowaPbAhVGOI8KHb1RAfUQFggtMAA&url=https%3A%2F%2Fwww.ijcai.org%2FProceedings%2F16%2FPapers%2F408.pdf&usg=AOvVaw3csL-yYL5hsvDLyqjPHBcm">RNN for Text Classification</a>
-<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwjWg-LowaPbAhVGOI8KHb1RAfUQFgg-MAE&url=http%3A%2F%2Funivagora.ro%2Fjour%2Findex.php%2Fijccc%2Farticle%2Fdownload%2F3142%2Fpdf&usg=AOvVaw02sgX96hAwVlOEbe14etjm">Attention based RNN</a>
-<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&cad=rja&uact=8&ved=0ahUKEwjWg-LowaPbAhVGOI8KHb1RAfUQFghaMAQ&url=https%3A%2F%2Fwww.aaai.org%2Focs%2Findex.php%2FAAAI%2FAAAI15%2Fpaper%2Fdownload%2F9745%2F9552&usg=AOvVaw37k05lV8569fo_aCghlO9i">RNN + CNN</a>
-<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=9&cad=rja&uact=8&ved=0ahUKEwjJh7S8wqPbAhUM6Y8KHU1hBlgQFgiYATAI&url=http%3A%2F%2Fwww.aclweb.org%2Fanthology%2FE17-1104&usg=AOvVaw0JI4qVgzT-D0RbCnQIfQtS">Very Deep CNN</a>
-<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiVgprRwqPbAhVHv48KHYkEAm4QFggtMAA&url=http%3A%2F%2Fai.tencent.com%2Failab%2Fmedia%2Fpublications%2FACL3-Brady.pdf&usg=AOvVaw2HPvD4WxrxM1-4-rK3jUa1">Deep Pyramid CNN</a>
-<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjZx-DxwqPbAhXEvo8KHVRWCUQQFggtMAA&url=http%3A%2F%2Fwww.cs.cmu.edu%2F~.%2Fhovy%2Fpapers%2F16HLT-hierarchical-attention-networks.pdf&usg=AOvVaw0NlQCca0WmnRw5Q6SczY-b">Hierarchical Attention Network</a>
-<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwi6yNXFw6PbAhWIrI8KHfvuDFcQFggtMAA&url=https%3A%2F%2Fnlp.stanford.edu%2Fpubs%2Fglove.pdf&usg=AOvVaw3XPTcwWcbYOXnahjvpeDTu">GloVe</a>
-<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwi7zezUw6PbAhWKYo8KHaGeCbAQFggoMAA&url=https%3A%2F%2Fgithub.com%2Ffacebookresearch%2FfastText&usg=AOvVaw1e2FnEQ3qGQ2tLYuDOSFJn">fastText</a>
-<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwih_vTaw6PbAhUHSY8KHTy0AeAQFggoMAA&url=https%3A%2F%2Fgithub.com%2Fbheinzerling%2Fbpemb&usg=AOvVaw1_Fi25NN0bQjS8u-2Pg_gK">BPE</a>
+<a href="https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge">Toxic Comment Classification Challenge - Kaggle</a><br>
+<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjWg-LowaPbAhVGOI8KHb1RAfUQFggtMAA&url=https%3A%2F%2Fwww.ijcai.org%2FProceedings%2F16%2FPapers%2F408.pdf&usg=AOvVaw3csL-yYL5hsvDLyqjPHBcm">RNN for Text Classification</a><br>
+<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwjWg-LowaPbAhVGOI8KHb1RAfUQFgg-MAE&url=http%3A%2F%2Funivagora.ro%2Fjour%2Findex.php%2Fijccc%2Farticle%2Fdownload%2F3142%2Fpdf&usg=AOvVaw02sgX96hAwVlOEbe14etjm">Attention based RNN</a><br>
+<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&cad=rja&uact=8&ved=0ahUKEwjWg-LowaPbAhVGOI8KHb1RAfUQFghaMAQ&url=https%3A%2F%2Fwww.aaai.org%2Focs%2Findex.php%2FAAAI%2FAAAI15%2Fpaper%2Fdownload%2F9745%2F9552&usg=AOvVaw37k05lV8569fo_aCghlO9i">RNN + CNN</a><br>
+<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=9&cad=rja&uact=8&ved=0ahUKEwjJh7S8wqPbAhUM6Y8KHU1hBlgQFgiYATAI&url=http%3A%2F%2Fwww.aclweb.org%2Fanthology%2FE17-1104&usg=AOvVaw0JI4qVgzT-D0RbCnQIfQtS">Very Deep CNN</a><br>
+<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiVgprRwqPbAhVHv48KHYkEAm4QFggtMAA&url=http%3A%2F%2Fai.tencent.com%2Failab%2Fmedia%2Fpublications%2FACL3-Brady.pdf&usg=AOvVaw2HPvD4WxrxM1-4-rK3jUa1">Deep Pyramid CNN</a><br>
+<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjZx-DxwqPbAhXEvo8KHVRWCUQQFggtMAA&url=http%3A%2F%2Fwww.cs.cmu.edu%2F~.%2Fhovy%2Fpapers%2F16HLT-hierarchical-attention-networks.pdf&usg=AOvVaw0NlQCca0WmnRw5Q6SczY-b">Hierarchical Attention Network</a><br>
+<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwi6yNXFw6PbAhWIrI8KHfvuDFcQFggtMAA&url=https%3A%2F%2Fnlp.stanford.edu%2Fpubs%2Fglove.pdf&usg=AOvVaw3XPTcwWcbYOXnahjvpeDTu">GloVe</a><br>
+<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwi7zezUw6PbAhWKYo8KHaGeCbAQFggoMAA&url=https%3A%2F%2Fgithub.com%2Ffacebookresearch%2FfastText&usg=AOvVaw1e2FnEQ3qGQ2tLYuDOSFJn">fastText</a><br>
+<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwih_vTaw6PbAhUHSY8KHTy0AeAQFggoMAA&url=https%3A%2F%2Fgithub.com%2Fbheinzerling%2Fbpemb&usg=AOvVaw1_Fi25NN0bQjS8u-2Pg_gK">BPE</a><br>
 <a href="https://www.kaggle.com/jagangupta/stop-the-s-toxic-comments-eda">EDA</a>
