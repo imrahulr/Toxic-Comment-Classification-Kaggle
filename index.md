@@ -22,6 +22,7 @@ The comments are to be tagged in the following six categories -
     <li>insult</li>
     <li>identity_hate</li>
 </ul>
+
 ### Train and Test Data
 
 The training data contains a row per comment, with an id, the text of the comment, and 6 different labels that we have to predict.
@@ -49,7 +50,7 @@ Test shape:  (153164, 2)
 | 3 | 0001b41b1c6bb37e |	more i cannot make any real suggestions on im...  |	0 |	0 |	0 |	0 |	0 |	0 |
 | 4 | 0001d958c54c6e35 |	you sir are my hero any chance you remember wh... |	0 |	0 |	0 |	0 |	0 |	0 |
 
-##### Test Data after basic preprocessing and cleaning
+### Test Data after basic preprocessing and cleaning
 
 |  | id | comment_text |
 |:--:|:--------:|-------|
@@ -58,3 +59,36 @@ Test shape:  (153164, 2)
 | 2 | 00013b17ad220c46| 	= = sources = = zawe ashton on lapland |
 | 3 | 00017563c3f7919a| 	if you have a look back at the source the inf... |
 | 4 | 00017695ad8997eb| 	i do not anonymously edit articles at all |
+
+### Exploring Train Data
+
+#### Number of Occurrences of each Output Class
+
+#### Correlation between Output Classes
+
+#### Words frequently occurring in Toxic Comments
+
+#### Words frequently occurring in Severe Toxic Comments
+
+#### Words frequently occurring in Threat Comments
+
+#### Words frequently occurring in Insult Comments
+
+
+## Our solution
+
+
+The final solution consists of several machine learning models - 
+
+<ul>
+<li>Attention with Bidirectional LSTM</li>
+<li>Bidirectional LSTM with Pre-Post Input Text</li>
+<li>Bidirectional GRU with derived features</li>
+<li>CNN based on DeepMoji Architecture</li>
+<li>CNN + GRU</li>
+<li>DeepMoji Architecture</li>
+<li>Character Level Hierarchical Network</li>
+<li>Ensemble of Logistic Regression and SVM</li>
+<li>2D CNN</li>
+<li>LightGBM</li>
+</ul>
