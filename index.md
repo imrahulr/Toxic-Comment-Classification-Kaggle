@@ -78,7 +78,7 @@ Test shape:  (153164, 2)
 ## Our solution
 
 
-The final solution consists of several machine learning models - 
+The final solution consists of ensemble of several machine learning models - 
 
 <ul>
 <li>Attention with Bidirectional LSTM</li>
@@ -92,3 +92,28 @@ The final solution consists of several machine learning models -
 <li>2D CNN</li>
 <li>LightGBM</li>
 </ul>
+
+Each model was trained using 10 fold validation with proper hyperparameter tuning. We used LightGBM and simple weighted averaging for stacking these models.
+
+### Embeddings Used
+
+Various pre-trained embeddings were used to create diverse models -
+<ul>
+<li>GloVe</li>
+<li>fastText</li>
+<li>word2vec</li>
+<li>Byte-Pair Encoded subword embeddings (BPE)</li>
+</ul> 
+
+## Results
+
+<ul>
+<li>The overall model got a ROC AUC score of 0.9874 on private LB.</li>
+<li>Preprocessing was not much impactful and did not significantly improve the score of any model.</li>
+<li>RNN models were significantly better than CNN models.</li>
+<li>The best model was DeepMoji followed by CNN-GRU.</li>
+<li>Adding attention layer to RNN models boosted their score.</li>
+<li>Logistic regression and LightGBM models had much lower scores but provided diversity.</li>
+</ul>
+
+### Thank You!
