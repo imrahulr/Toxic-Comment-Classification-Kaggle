@@ -60,19 +60,75 @@ Test shape:  (153164, 2)
 | 3 | 00017563c3f7919a| 	if you have a look back at the source the inf... |
 | 4 | 00017695ad8997eb| 	i do not anonymously edit articles at all |
 
+### Cleaning Data
+
+```python
+def cleanData(text, stemming=False, lemmatize=False):    
+    text = text.lower().split()
+    text = " ".join(text)
+    text = re.sub(r"[^A-Za-z0-9^,!.\/'+\-=]", " ", text)
+    text = re.sub(r"what's", "what is ", text)
+    text = re.sub(r"\'s", " ", text)
+    text = re.sub(r"\'ve", " have ", text)
+    text = re.sub(r"can't", "cannot ", text)
+    text = re.sub(r"n't", " not ", text)
+    text = re.sub(r"i'm", "i am ", text)
+    text = re.sub(r"\'re", " are ", text)
+    text = re.sub(r"\'d", " would ", text)
+    text = re.sub(r"\'ll", " will ", text)
+    text = re.sub(r",", " ", text)
+    text = re.sub(r"\.", " ", text)
+    text = re.sub(r"!", " ! ", text)
+    text = re.sub(r"\/", " ", text)
+    text = re.sub(r"\^", " ^ ", text)
+    text = re.sub(r"\+", " + ", text)
+    text = re.sub(r"\-", " - ", text)
+    text = re.sub(r"\=", " = ", text)
+    text = re.sub(r"'", " ", text)
+    text = re.sub(r"(\d+)(k)", r"\g<1>000", text)
+    text = re.sub(r":", " : ", text)
+    text = re.sub(r" e g ", " eg ", text)
+    text = re.sub(r" b g ", " bg ", text)
+    text = re.sub(r" u s ", " american ", text)
+    text = re.sub(r"\0s", "0", text)
+    text = re.sub(r" 9 11 ", "911", text)
+    text = re.sub(r"e - mail", "email", text)
+    text = re.sub(r"j k", "jk", text)
+    text = re.sub(r"\s{2,}", " ", text)
+    if stemming:
+        st = PorterStemmer()
+        txt = " ".join([st.stem(w) for w in text.split()])
+    if lemmatize:
+        wordnet_lemmatizer = WordNetLemmatizer()
+        txt = " ".join([wordnet_lemmatizer.lemmatize(w) for w in text.split()])
+    return text
+```
+
 ### Exploring Train Data
 
 #### Number of Occurrences of each Output Class
 
+![alt text](https://github.com/imrahulr/Toxic-Comment-Classification-Kaggle/blob/master/img/noofoccurrences.png "Number of Occurrences of each Class")
+
 #### Correlation between Output Classes
+
+![alt text](https://github.com/imrahulr/Toxic-Comment-Classification-Kaggle/blob/master/img/corr.png "Correlation between Output Classes")
 
 #### Words frequently occurring in Toxic Comments
 
+![alt text](https://github.com/imrahulr/Toxic-Comment-Classification-Kaggle/blob/master/img/wordtoxic.png "Words frequently occurring in Toxic Comments")
+
 #### Words frequently occurring in Severe Toxic Comments
+
+![alt text](https://github.com/imrahulr/Toxic-Comment-Classification-Kaggle/blob/master/img/wordstox.png "Words frequently occurring in Severe Toxic Comments")
 
 #### Words frequently occurring in Threat Comments
 
+![alt text](https://github.com/imrahulr/Toxic-Comment-Classification-Kaggle/blob/master/img/woedthreat.png "Words frequently occurring in Threat Comments")
+
 #### Words frequently occurring in Insult Comments
+
+![alt text](https://github.com/imrahulr/Toxic-Comment-Classification-Kaggle/blob/master/img/wordinsult.png "Words frequently occurring in Insult Comments")
 
 
 ## Our solution
