@@ -8,6 +8,7 @@ Discussing things you care about can be difficult. The threat of abuse and haras
 
 So, in this competition on Kaggle, the challenge was to build a multi-headed model that’s capable of detecting different types of of toxicity like threats, obscenity, insults, and identity-based hate better than Perspective’s current models. A dataset of comments from Wikipedia’s talk page edits was provided. 
 
+---
 
 ## Data Overview:
 
@@ -108,7 +109,7 @@ def cleanData(text, stemming=False, lemmatize=False):
 
 #### Number of Occurrences of each Output Class
 
-![alt text](https://github.com/imrahulr/Toxic-Comment-Classification-Kaggle/blob/master/img/noofoccurrences.png "Number of Occurrences of each Class")
+<img src="https://github.com/imrahulr/Toxic-Comment-Classification-Kaggle/blob/master/img/noofoccurrences.png" alt="Number of Occurrences of each Class"/>
 
 #### Correlation between Output Classes
 
@@ -130,6 +131,7 @@ def cleanData(text, stemming=False, lemmatize=False):
 
 ![alt text](https://github.com/imrahulr/Toxic-Comment-Classification-Kaggle/blob/master/img/wordinsult.png "Words frequently occurring in Insult Comments")
 
+---
 
 ## Our solution
 
@@ -160,6 +162,8 @@ Various pre-trained embeddings were used to create diverse models -
 <li>word2vec</li>
 <li>Byte-Pair Encoded subword embeddings (BPE)</li>
 </ul> 
+
+---
 
 ## Results
 
