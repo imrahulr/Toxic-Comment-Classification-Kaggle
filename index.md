@@ -110,7 +110,7 @@ def cleanData(text, stemming=False, lemmatize=False):
 #### Number of Occurrences of each Output Class
 
 <p align="center">
-<img src="/img/noofoccurrences.png" alt="Number of Occurrences of each Class"/>
+<img src="img/noofoccurrences.png" alt="Number of Occurrences of each Class"/>
 </p>
 
 #### Correlation between Output Classes
