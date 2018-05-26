@@ -1,6 +1,6 @@
 # Toxic Comment Classification Challenge
 
-####Identify and classify toxic online comments
+#### Identify and classify toxic online comments
 
 
 Discussing things you care about can be difficult. The threat of abuse and harassment online means that many people stop expressing themselves and give up on seeking different opinions. Platforms struggle to effectively facilitate conversations, leading many communities to limit or completely shut down user comments.
@@ -13,14 +13,14 @@ So, in this competition on Kaggle, the challenge was to build a multi-headed mod
 The dataset used was Wikipedia corpus dataset which was rated by human raters for toxicity. The corpus contains comments from discussions relating to user pages and articles dating from 2004-2015.
 
 The comments are to be tagged in the following six categories - 
-    +toxic
-    +severe_toxic
-    +obscene
-    +threat
-    +insult
-    +identity_hate
+    .*toxic
+    .*severe_toxic
+    .*obscene
+    .*threat
+    .*insult
+    .*identity_hate
     
-###Train and Test Data
+### Train and Test Data
 
 The training data contains a row per comment, with an id, the text of the comment, and 6 different labels that we have to predict.
 
@@ -34,10 +34,10 @@ print('Train shape: ', train_df.shape)
 print('Test shape: ', test_df.shape) 
 ```
 
-  Train shape:  (159571, 8)
-  Test shape:  (153164, 2)
+Train shape:  (159571, 8)
+Test shape:  (153164, 2)
 
-#####Train Data after basic preprocessing and cleaning
+### Train Data after basic preprocessing and cleaning
 
 id 	comment_text 	toxic 	severe_toxic 	obscene 	threat 	insult 	identity_hate
 0 	0000997932d777bf 	explanation why the edits made under my userna... 	0 	0 	0 	0 	0 	0
@@ -46,5 +46,11 @@ id 	comment_text 	toxic 	severe_toxic 	obscene 	threat 	insult 	identity_hate
 3 	0001b41b1c6bb37e 	more i cannot make any real suggestions on im... 	0 	0 	0 	0 	0 	0
 4 	0001d958c54c6e35 	you sir are my hero any chance you remember wh... 	0 	0 	0 	0 	0 	0
 
-#####Test Data after basic preprocessing and cleaning
+##### Test Data after basic preprocessing and cleaning
 
+id;; 	comment_text
+0; 	00001cee341fdb12; 	yo bitch ja rule is more succesful then you wi...
+1; 	0000247867823ef7; 	= = from rfc = = the title is fine as it is imo
+2; 	00013b17ad220c46; 	= = sources = = zawe ashton on lapland
+3; 	00017563c3f7919a; 	if you have a look back at the source the inf...
+4; 	00017695ad8997eb; 	i do not anonymously edit articles at all
