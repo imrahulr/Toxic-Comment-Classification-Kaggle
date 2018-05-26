@@ -109,35 +109,37 @@ def cleanData(text, stemming=False, lemmatize=False):
 
 #### Number of Occurrences of each Output Class
 
-<img src="/img/noofoccurrences.png" alt="Number of Occurrences of each Class"/>
+<p align="center">
+<img src="img/noofoccurrences.png" alt="Number of Occurrences of each Class"/>
+</p>
 
 #### Correlation between Output Classes
 
 <p align="center">
-<img src="/img/corr.png" alt="Correlation between Output Classes"/>                                                                                                                                  </p>
+<img src="img/corr.png" alt="Correlation between Output Classes"/>                                                                                                                                  </p>
 
 #### Words frequently occurring in Toxic Comments
 
 <p align="center">
-<img src="/img/wordtoxic.png" alt="Words frequently occurring in Toxic Comments"/>
+<img src="img/wordtoxic.png" alt="Words frequently occurring in Toxic Comments"/>
 </p>
                                                                                                                                                       
 #### Words frequently occurring in Severe Toxic Comments
 
 <p align="center">
-<img src="/img/wordstox.png" alt="Words frequently occurring in Severe Toxic Comments"/>
+<img src="img/wordstox.png" alt="Words frequently occurring in Severe Toxic Comments"/>
 </p>
 
 #### Words frequently occurring in Threat Comments
 
 <p align="center">
-<img src="/img/woedthreat.png" alt="Words frequently occurring in Threat Comments"/>
+<img src="img/woedthreat.png" alt="Words frequently occurring in Threat Comments"/>
 </p>
 
 #### Words frequently occurring in Insult Comments
 
 <p align="center">
-<img src="/img/wordinsult.png" alt="Words frequently occurring in Insult Comments"/>
+<img src="img/wordinsult.png" alt="Words frequently occurring in Insult Comments"/>
 </p>
 
 ---
