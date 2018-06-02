@@ -6,6 +6,8 @@ Identify and classify toxic online comments https://www.kaggle.com/c/jigsaw-toxi
 
 [Link to GitHub Page](https://imrahulr.github.io/Toxic-Comment-Classification-Kaggle/)
 
+---
+
 #### Identify and classify toxic online comments
 
 
@@ -196,5 +198,3 @@ Various pre-trained embeddings were used to create diverse models -
 </ul>
 
 ### Thank You!
-
----
