@@ -169,10 +169,10 @@ Each model was trained using 10 fold validation with proper hyperparameter tunin
 
 Various pre-trained embeddings were used to create diverse models -
 <ul>
-<li>GloVe</li>
-<li>fastText</li>
-<li>word2vec</li>
-<li>Byte-Pair Encoded subword embeddings (BPE)</li>
+    <li>GloVe</li>
+    <li>fastText</li>
+    <li>word2vec</li>
+    <li>Byte-Pair Encoded subword embeddings (BPE)</li>
 </ul> 
 
 ---
@@ -186,6 +186,7 @@ Various pre-trained embeddings were used to create diverse models -
 <li>The best model was DeepMoji followed by CNN-GRU and capsule network.</li>
 <li>Adding attention layer to RNN models boosted their score.</li>
 <li>Logistic regression and LightGBM models had much lower scores but provided diversity.</li>
+<li>Some input samples were toxic only in the last few words. Thus, training each model on ending 150 words in addition to starting 150 words improved their performance.</li>
 </ul>
 
 ### Thank You!
