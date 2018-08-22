@@ -46,7 +46,7 @@ print('Train shape: ', train_df.shape)
 print('Test shape: ', test_df.shape) 
 ```
 
-Train shape:  (159571, 8)
+Train shape:  (159571, 8)<br>
 Test shape:  (153164, 2)
 
 ### Train Data after basic preprocessing and cleaning
