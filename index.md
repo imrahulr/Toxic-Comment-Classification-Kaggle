@@ -10,7 +10,7 @@ So, in this competition on Kaggle, the challenge was to build a multi-headed mod
 
 ---
 
-## Data Overview:
+## Data Overview
 
 The dataset used was Wikipedia corpus dataset which was rated by human raters for toxicity. The corpus contains comments from discussions relating to user pages and articles dating from 2004-2015.
 
