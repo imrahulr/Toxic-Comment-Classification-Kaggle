@@ -4,7 +4,7 @@ Identify and classify toxic online comments https://www.kaggle.com/c/jigsaw-toxi
 
 ### 15th place solution
 
-[Link to GitHub Page](https://imrahulr.github.io/Toxic-Comment-Classification-Kaggle/)
+[Link to GitHub Page](https://imrahulr.github.io/nlp/kaggle/2018/01/12/toxic-comment-classification.html)
 
 ---
 
